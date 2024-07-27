@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculatort</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="centered-content">
+        <h2 class="heading">EMI Calculatort</h2>
+        <div class="fast-row">
+            <div>
+                <span>Amount you need &#8377;</span> 
+                <input type="text" id="txtamount" onchange="setAmount()" style="width: 50px;" value="5000">
+            </div>
+            <div>
+                <span>for</span>
+                <input type="text" id="txtyear" onchange="setYear()" style="width: 50px;" value="1">
+                <span> Year</span>
+            </div>
+            <div>
+                <span>Interest  rate</span>
+                <input type="text" id="txtpercentage" onchange="setPercentage()" style="width: 50px;" value="10">
+                <span> %</span>
+            </div>
+        </div>
+        <div class="second-row">
+            <div>
+                <input type="range" min="5000" max="1000000" onchange="Handelamount()" id="rangeamount" style="width: 100%;" value="5000">
+                <div class="second-row-contend">
+                    <span>&#8377;5000</span>
+                    <span>&#8377;1000000</span>
+                </div>
+            </div>
+            <div>
+                <input type="range" onchange="Hendelyear()" id="rangeyear" min="1" max="10" style="width: 100%;" value="1">
+                <div class="second-row-contend">
+                    <span>1 year</span>
+                    <span>10 year</span>
+                </div>
+            </div>
+            <div>
+                <input type="range" onchange="Hendelpercentage()" min="10.5" max="55.55" step="0.01" id="rangepercentage" style="width: 100%;" value="10">
+                <div class="second-row-contend">
+                    <span>10%</span>
+                    <span>60%</span>
+                </div>
+            </div>
+        </div>
+        <div class="thired-row">
+            <button onclick="Hendelcalculation()" class="calculate-button">Calculate</button>
+        </div>
+
+        <p id="result" class="result-value"></p>
+        <p id="yearresult" class="result-value"></p>
+    </div>
+
+
+
+    
+</body>
+</html>
+

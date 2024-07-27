@@ -1,0 +1,63 @@
+
+body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+   
+    }
+    .centered-content {
+        padding: 20px;
+        background-color: lightblue;
+        border: 1px solid #000;
+      
+    }
+    .heading{
+        display: flex;
+        justify-content: center;
+    }
+    .fast-row{
+        display: flex;
+        justify-content: space-between;
+        width: 50vw ;
+    }
+    .second-row{
+        display: flex;
+        justify-content: space-between;
+        width: 50vw ;
+        margin-top: 10px;
+    }
+    .second-row-contend{
+        display: flex;
+        justify-content: space-between; 
+    }
+    .thired-row{
+        margin-top: 50px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .calculate-button {
+        background-color: #6a4caf; /* Green background */
+        border: none; /* Remove borders */
+        color: white; /* White text */
+        padding: 15px 32px; /* Some padding */
+        text-align: center; /* Center the text */
+        text-decoration: none; /* Remove underline */
+        display: inline-block; /* Get the element to sit next to other elements */
+        font-size: 16px; /* Increase font size */
+        margin: 4px 2px; /* Some margin */
+        cursor: pointer; /* Pointer/hand icon */
+        border-radius: 8px; /* Rounded corners */
+        transition-duration: 0.4s; /* 0.4 second transition for hover effects */
+    }
+    .calculate-button:hover {
+        background-color: white; /* White background on hover */
+        color: black; /* Black text on hover */
+        border: 2px solid #4CAF50; /* Green border on hover */
+    }
+    .result-value{
+        color: red;
+        font: bold;
+    }
+    
