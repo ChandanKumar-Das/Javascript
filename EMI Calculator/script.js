@@ -32,11 +32,13 @@ function setAmount(){
 function setYear(){
     console.log(document.getElementById('txtyear').value)
     document.getElementById('rangeyear').value = document.getElementById('txtyear').value
-    if(document.getElementById('rangeyear').value == '')
+    if(document.getElementById('rangeyear').value == ' ')
         return document.getElementById('rangeyear').value = 0
 }
 function setPercentage(){
     document.getElementById('rangepercentage').value = document.getElementById('txtpercentage').value
+    if(document.getElementById('rangepercentage').value == '')
+        return document.getElementById('rangepercentage').value = 0
 }
 
 
